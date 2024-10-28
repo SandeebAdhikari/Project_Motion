@@ -1,9 +1,4 @@
-import {
-  useScroll,
-  useTransform,
-  AnimatePresence,
-  motion,
-} from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import {
   headContainerAnimation,
@@ -12,10 +7,6 @@ import {
 } from "../animations/animations";
 
 const Profile: React.FC = () => {
-  const { scrollY } = useScroll();
-
-  const opacity = useTransform(scrollY, [0, 200], [1, 0.1] as [number, number]);
-  const scale = useTransform(scrollY, [0, 200], [1, 0.8] as [number, number]);
   return (
     <AnimatePresence>
       <motion.div
@@ -25,14 +16,15 @@ const Profile: React.FC = () => {
         animate="animate"
         exit="exit"
       >
-        <motion.div
+        <motion.h1
           variants={headTextAnimation}
           initial="initial"
           animate="animate"
           exit="exit"
+          className="lg:text-[8rem]"
         >
-          <h1 className="lg:text-[8rem]">SANDEEB ADHIKARI</h1>
-        </motion.div>
+          SANDEEB ADHIKARI
+        </motion.h1>
       </motion.div>
     </AnimatePresence>
   );

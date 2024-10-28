@@ -13,39 +13,39 @@ import {
 import { type SkillShowcaseProps } from "../components/skills/SkillShowCase";
 
 // Languages
-import HtmlSvg from "../../public/icons/html.svg";
-import CsssSvg from "../../public/icons/css.svg";
-import SassSvg from "../../public/icons/sass.svg";
-import JavascriptSvg from "../../public/icons/javascript.svg";
-import TypescriptSvg from "../../public/icons/typescript.svg";
-import PythonSvg from "../../public/icons/python.svg";
-import JavaSvg from "../../public/icons/java.svg";
-import CppSvg from "../../public/icons/cpp.svg";
-import CSvg from "../../public/icons/c.svg";
+import HtmlSvg from "../assets/icons/html.svg";
+import CsssSvg from "../assets/icons/css.svg";
+import SassSvg from "../assets/icons/sass.svg";
+import JavascriptSvg from "../assets/icons/javascript.svg";
+import TypescriptSvg from "../assets/icons/typescript.svg";
+import PythonSvg from "../assets/icons/python.svg";
+import JavaSvg from "../assets/icons/java.svg";
+import CppSvg from "../assets/icons/cpp.svg";
+import CSvg from "../assets/icons/c.svg";
 
 // Libraries
-import ReactjsSvg from "../../public/icons/reactjs.svg";
-import SolidjsSvg from "../../public/icons/solidjs.svg";
-import ReduxSvg from "../../public/icons/redux.svg";
-import TailwindcssSvg from "../../public/icons/tailwindcss.svg";
-import MuiSvg from "../../public/icons/mui.svg";
-import ViteSvg from "../../public/icons/vite.svg";
+import ReactjsSvg from "../assets/icons/reactjs.svg";
+import SolidjsSvg from "../assets/icons/solidjs.svg";
+import ReduxSvg from "../assets/icons/redux.svg";
+import TailwindcssSvg from "../assets/icons/tailwindcss.svg";
+import MuiSvg from "../assets/icons/mui.svg";
+import ViteSvg from "../assets/icons/vite.svg";
 
 // Backend
-import NodejsSvg from "../../public/icons/nodejs.svg";
-import DjangoSvg from "../../public/icons/django.svg";
+import NodejsSvg from "../assets/icons/nodejs.svg";
+import DjangoSvg from "../assets/icons/django.svg";
 
 // Database and ORMs
-import MongoDBSvg from "../../public/icons/mongodb.svg";
-import PostgressSvg from "../../public/icons/postgresql.svg";
-import MysqlSvg from "../../public/icons/mysql.svg";
+import MongoDBSvg from "../assets/icons/mongodb.svg";
+import PostgressSvg from "../assets/icons/postgresql.svg";
+import MysqlSvg from "../assets/icons/mysql.svg";
 
 // Tools and Tech
-import GitSvg from "../../public/icons/git.svg";
-import DockerSvg from "../../public/icons/docker.svg";
-import AwsSvg from "../../public/icons/aws.svg";
-import PostmanSvg from "../../public/icons/postman.svg";
-import RedisSvg from "../../public/icons/redis.svg";
+import GitSvg from "../assets/icons/git.svg";
+import DockerSvg from "../assets/icons/docker.svg";
+import AwsSvg from "../assets/icons/aws.svg";
+import PostmanSvg from "../assets/icons/postman.svg";
+import RedisSvg from "../assets/icons/redis.svg";
 
 export const SKILLS_DATA: SkillShowcaseProps["skills"] = [
   {
