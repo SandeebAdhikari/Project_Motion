@@ -5,7 +5,11 @@ import {
   motion,
 } from "framer-motion";
 import React from "react";
-import { headTextAnimation, slideAnimation } from "../animations/animations";
+import {
+  headContainerAnimation,
+  headTextAnimation,
+  slideAnimation,
+} from "../animations/animations";
 
 const Profile: React.FC = () => {
   const { scrollY } = useScroll();
@@ -16,7 +20,7 @@ const Profile: React.FC = () => {
     <AnimatePresence>
       <motion.div
         className="p-5 rounded-lg bg-transparent"
-        variants={slideAnimation("left")}
+        variants={headContainerAnimation}
         initial="initial"
         animate="animate"
         exit="exit"
