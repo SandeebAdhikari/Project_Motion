@@ -17,10 +17,10 @@ const Profile: React.FC = () => {
         exit="exit"
       >
         <motion.h1
-          variants={headTextAnimation}
-          initial="initial"
-          animate="animate"
-          exit="exit"
+          variants={slideAnimation("left")}
+          // initial="initial"
+          // animate="animate"
+          // exit="exit"
           className="lg:text-[8rem]"
         >
           SANDEEB ADHIKARI

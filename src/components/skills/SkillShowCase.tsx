@@ -30,8 +30,8 @@ export default function SkillShowcase({ skills }: SkillShowcaseProps) {
                   {section.sectionName}
                 </span>
                 <div className="mt-2 flex flex-wrap gap-4 text-xl text-accent-foreground">
-                  {section.skills.map((pill, index) => {
-                    console.log("Skill:", pill);
+                  {section.skills.map((box, index) => {
+                    console.log("Skill:", box);
                     return (
                       <FadeRight
                         key={`lang-${index}`}
@@ -39,7 +39,7 @@ export default function SkillShowcase({ skills }: SkillShowcaseProps) {
                         delay={0.1 + index * 0.1}
                         whileInView={!isMobileDebonced}
                       >
-                        <SkillBox {...pill} />
+                        <SkillBox {...box} />
                       </FadeRight>
                     );
                   })}
