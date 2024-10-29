@@ -21,7 +21,7 @@ const NavBar = () => {
         initial="initial"
         animate="animate"
         exit="exit"
-        className="flex  items-center h-[100px] w-full"
+        className="flex items-center h-[150px] w-full"
       >
         <div className="flex">
           <TypingEffect
@@ -54,7 +54,7 @@ const NavBar = () => {
               exit="exit"
               onAnimationComplete={() => setLogoComplete(true)}
             >
-              <img src={logo} alt="logo" className="h-10 w-10" />
+              <img src={logo} alt="logo" className="h-12 w-12" />
             </motion.div>
           )}
         </div>
@@ -71,7 +71,7 @@ const NavBar = () => {
                 <img
                   src={Icon}
                   alt={`icon-${index}`}
-                  className="h-6 w-8 "
+                  className="h-6 w-9 hover:border-red-600 hover:scale-110 transition-transform duration-200"
                   style={{ filter: "invert(1)" }}
                 />
               </motion.div>

@@ -1,5 +1,5 @@
 import NavBar from "../components/NavBar";
-import Profile from "../components/Profile";
+import Profile from "../components/Profile/Profile";
 import About from "../components/About";
 import Project from "../components/Project";
 import Footer from "../components/Footer";
