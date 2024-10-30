@@ -1,5 +1,5 @@
-import Timeline from "../../animations/Timeline";
-import WavyText from "../../animations/WavyText";
+import Timeline from "../animations/Timeline";
+import WavyText from "../animations/WavyText";
 
 const Education = () => {
   const events = [

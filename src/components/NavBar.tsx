@@ -1,8 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import TypingEffect from "../animations/TypingEffect";
+import TypingEffect from "./animations/TypingEffect";
 import logo from "../../public/logo/logo512.png";
-import { slideAnimation } from "../animations/animations";
+import { slideAnimation } from "./animations/animations";
 import Facebook from "../assets/icons/socials/facebook.svg";
 import GitHub from "../assets/icons/socials/github.svg";
 import Instagram from "../assets/icons/socials/instagram.svg";

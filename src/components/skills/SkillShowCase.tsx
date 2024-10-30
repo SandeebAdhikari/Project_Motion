@@ -1,9 +1,9 @@
 import { AnimatePresence } from "framer-motion";
 import SkillBox, { type SkillBoxProps } from "./SkillBox";
-import FadeRight from "../../animations/FadeRight";
+import FadeRight from "../animations/FadeRight";
 import { useScreenBreakpoint } from "../../hooks/useScreenBreakpoint";
 import { useDebounceValue } from "../../hooks/useDebounceValue";
-import BlurIn from "../../animations/BlurIn";
+import BlurIn from "../animations/BlurIn";
 
 export interface SkillShowcaseProps {
   skills: {
