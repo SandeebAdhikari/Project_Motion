@@ -9,7 +9,7 @@ export default function SkillBox(props: SkillBoxProps) {
   const { name, icon: Icon } = props;
 
   return (
-    <div className="flex w-max items-center gap-2 rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm shadow-md dark:bg-gray-800">
+    <div className="flex w-max items-center gap-2 rounded-lg border border-orange-200 bg-white px-4 py-3 text-sm shadow-md dark:bg-gray-800">
       {typeof Icon === "string" ? (
         <img
           src={Icon}
