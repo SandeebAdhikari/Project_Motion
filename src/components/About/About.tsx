@@ -6,10 +6,13 @@ import {
 } from "framer-motion";
 import React from "react";
 import MultiDirectionSlide from "../../animations/MultiDirectionSlide";
+import SkillShowCase from "../skills/SkillShowCase";
+import { SKILLS_DATA } from "../../data/skills";
 
 import AboutImg from "../../../public/images/about_me.png";
 
 import AboutCard from "./AboutCard";
+import Education from "./Education";
 
 const About: React.FC = () => {
   const { scrollYProgress } = useScroll();
@@ -23,7 +26,7 @@ const About: React.FC = () => {
     <AnimatePresence>
       <div className="text-7xl w-full h-[660px]">
         <MultiDirectionSlide text1="Passion Fuels Purpose!" />
-        <div className="text-xl ">
+        <div className="text-2xl ">
           <MultiDirectionSlide text2="Get To Know More" />
         </div>
 
@@ -37,6 +40,8 @@ const About: React.FC = () => {
           </motion.div>
         </div>
       </div>
+      <SkillShowCase skills={SKILLS_DATA} />
+      <Education />
     </AnimatePresence>
   );
 };

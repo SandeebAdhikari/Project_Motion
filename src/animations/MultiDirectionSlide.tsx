@@ -34,7 +34,7 @@ const MultiDirectionSlide = ({ text1, text2 }: MultiDirectionSlideProps) => {
         animate={isInView ? "visible" : "right"}
         variants={MULTIDIRECTION_SLIDE_VARIANTS}
         transition={{ duration: 1 }}
-        className="text-center font-display font-bold tracking-[-0.02em] drop-shadow-sm  md:leading-[5rem]"
+        className="text-center font-display font-semibold tracking-[-0.02em] drop-shadow-sm  md:leading-[5rem]"
       >
         {text2}
       </motion.h1>

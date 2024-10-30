@@ -8,3 +8,24 @@
     box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3);
   }
 }
+
+@layer utilities {
+  .timeline-container {
+    @apply flex flex-col items-center;
+  }
+  .timeline-line {
+    @apply absolute w-1 bg-teal-500 h-full;
+  }
+  .timeline-circle {
+    @apply w-4 h-4 bg-teal-500 rounded-full border-2 border-white;
+  }
+  .timeline-event {
+    @apply ml-8 p-4 text-white rounded-lg border border-teal-500 bg-gray-900 shadow-md;
+  }
+  .timeline-title {
+    @apply text-lg font-semibold text-teal-400;
+  }
+  .timeline-description {
+    @apply text-sm text-gray-300;
+  }
+}

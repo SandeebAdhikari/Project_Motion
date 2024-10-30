@@ -3,6 +3,7 @@ import SkillBox, { type SkillBoxProps } from "./SkillBox";
 import FadeRight from "../../animations/FadeRight";
 import { useScreenBreakpoint } from "../../hooks/useScreenBreakpoint";
 import { useDebounceValue } from "../../hooks/useDebounceValue";
+import BlurIn from "../../animations/BlurIn";
 
 export interface SkillShowcaseProps {
   skills: {
@@ -18,18 +19,18 @@ export default function SkillShowcase({ skills }: SkillShowcaseProps) {
   return (
     <section className="overflow-hidden">
       <div className="relative mx-auto max-w-7xl">
-        <h2 className="text-xl font-semibold text-accent sm:text-4xl">
-          Skills
+        <h2 className="text-3xl text-center sm:text-3xl">
+          <BlurIn word="Skills" />
         </h2>
         {skills.map((section) => {
           console.log("Section:", section);
           return (
             <AnimatePresence key={section.sectionName}>
               <div className="mt-4">
-                <span className="text-xs font-semibold text-foreground sm:text-sm">
+                <span className=" font-bold text-xl text-center">
                   {section.sectionName}
                 </span>
-                <div className="mt-2 flex flex-wrap gap-4 text-xl text-accent-foreground">
+                <div className="mt-2 flex flex-wrap gap-4 text-lg ">
                   {section.skills.map((box, index) => {
                     console.log("Skill:", box);
                     return (

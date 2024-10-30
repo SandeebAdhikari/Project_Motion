@@ -31,7 +31,7 @@ const WavyText: React.FC<WavyTextProps> = ({ word = "default text" }) => {
                 duration: 0.5,
                 delay: i * 0.2,
               }}
-              className="text-center font-display font-bold tracking-[-0.2em] drop-shadow-sm md:leading-[5rem]"
+              className="text-center font-display font-bold tracking-[-0.3em] drop-shadow-sm md:leading-[5rem]"
             >
               {char}
             </motion.h1>
