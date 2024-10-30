@@ -34,7 +34,7 @@ const GradualSpacing: React.FC<GradualSpacingProps> = ({
             exit="hidden"
             variants={gradual}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="text-center font-bold font-display text-2xl  drop-shadow-sm md:text-6xl md:leading-[5rem]"
+            className="text-center font-bold font-display drop-shadow-sm md:leading-[5rem]"
           >
             {char === " " ? <span>&nbsp;</span> : char}
           </motion.h1>

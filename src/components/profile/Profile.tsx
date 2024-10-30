@@ -2,15 +2,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import {
   fadeAnimation,
-  headContainerAnimation,
-  headContentAnimation,
   headTextAnimation,
   slideAnimation,
 } from "../../animations/animations";
 import GradualSpacing from "../../animations/GradualSpacing";
-import Profile_Pic from "../../../public/images/profile-pic.png";
-import { SiReaddotcv } from "react-icons/si";
 import RotateBetweenWords from "../../animations/RotateBetweenWords";
+
+import Profile_Pic from "../../../public/images/profile-pic.png";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const Profile: React.FC = () => {
   const [firstGradualComplete, setFirstGradualComplete] = useState(false);
@@ -19,8 +18,8 @@ const Profile: React.FC = () => {
 
   return (
     <AnimatePresence>
-      <div className="mt-[200px] min-h-screen flex justify-between w-full">
-        <div className="flex flex-col mt-[40px]">
+      <div className="mt-[200px] h-[620px] flex justify-between w-full">
+        <div className="flex flex-col mt-[40px] text-6xl">
           <GradualSpacing
             text="Transforming Ideas Into"
             onComplete={() => setFirstGradualComplete(true)}
@@ -58,12 +57,12 @@ const Profile: React.FC = () => {
                 exit="exit"
                 whileHover={{ scale: 1.1 }}
                 onAnimationComplete={() => setFirstBottonComplete(true)}
-                className="w-32 flex mr-5 items-center h-12 px-5 border rounded-xl"
+                className="w-36 flex mr-5 items-center h-12 px-5 border  rounded-xl gap-2"
               >
-                <SiReaddotcv />
-                <motion.span className="ml-2 font-bold text-lg">
-                  Resume
-                </motion.span>
+                <span className="ml-2 font-bold text-lg">
+                  <GradualSpacing text="Resume" />
+                </span>
+                <FaArrowUpRightFromSquare size={16} />
               </motion.button>
               {firstBottonComplete && (
                 <motion.button
@@ -74,9 +73,9 @@ const Profile: React.FC = () => {
                   whileHover={{ scale: 1.1 }}
                   className="w-32 bg-orange-200  flex items-center h-12 px-5 hover:border rounded-xl"
                 >
-                  <motion.span className="ml-2 font-bold text-black text-lg">
-                    Contact
-                  </motion.span>
+                  <span className="ml-2 font-bold text-black text-lg">
+                    <GradualSpacing text="Contact" />
+                  </span>
                 </motion.button>
               )}
             </div>
