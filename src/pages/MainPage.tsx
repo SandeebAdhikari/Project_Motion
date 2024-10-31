@@ -1,7 +1,7 @@
 import NavBar from "../components/NavBar";
 import Profile from "../components/profile/Profile";
 import About from "../components/About/About";
-import Project from "../components/Project";
+import Project from "../components/Project/Project";
 import Footer from "../components/Footer";
 
 const MainPage = () => {

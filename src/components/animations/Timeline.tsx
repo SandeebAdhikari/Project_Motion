@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { slideAnimation } from "./animations";
+import { fadeAnimation, slideAnimation } from "./animations";
 
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
@@ -75,16 +75,33 @@ const Timeline = ({ index, event, onComplete }: TimelineProps) => {
 
       {/* Event Details Animation */}
       {secondAnimationComplete && (
-        <motion.div
-          variants={slideAnimation("up")}
-          initial="hidden"
-          animate="visible"
-          className="flex flex-col items-center mt-4"
-        >
-          <h3 className="text-xl font-bold">{event.title}</h3>
-          <p>{event.school}</p>
-          <p>{event.description}</p>
-        </motion.div>
+        <div className="flex flex-col items-center mt-4">
+          <motion.h3
+            variants={slideAnimation("up")}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="text-xl font-bold"
+          >
+            {event.title}
+          </motion.h3>
+          <motion.p
+            variants={slideAnimation("up")}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+          >
+            {event.school}
+          </motion.p>
+          <motion.p
+            variants={slideAnimation("up")}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+          >
+            {event.description}
+          </motion.p>
+        </div>
       )}
     </div>
   );

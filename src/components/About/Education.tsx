@@ -24,7 +24,7 @@ const Education = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center p-8 mt-10">
+    <div className="flex flex-col items-center p-8 mt-[250px]">
       <h1 className="font-display text-3xl">
         <WavyText word="Education And Certification" />
       </h1>

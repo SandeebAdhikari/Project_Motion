@@ -17,7 +17,7 @@ export default function SkillShowcase({ skills }: SkillShowcaseProps) {
   const isMobileDebonced = useDebounceValue(isMobile, 600);
 
   return (
-    <section className="overflow-hidden">
+    <section className="overflow-hidden mt-[150px]">
       <div className="relative mx-auto max-w-7xl">
         <h2 className="text-3xl text-center sm:text-3xl">
           <BlurIn word="Skills" />
