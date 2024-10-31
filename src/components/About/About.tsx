@@ -9,7 +9,7 @@ import MultiDirectionSlide from "../animations/MultiDirectionSlide";
 import SkillShowCase from "../skills/SkillShowCase";
 import { SKILLS_DATA } from "../../data/skills";
 
-import AboutImg from "../../../public/images/about_me.png";
+import AboutImg from "/images/about_me.png";
 
 import AboutCard from "./AboutCard";
 import Education from "./Education";

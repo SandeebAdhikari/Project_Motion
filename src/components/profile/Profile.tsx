@@ -8,7 +8,7 @@ import {
 import GradualSpacing from "../animations/GradualSpacing";
 import RotateBetweenWords from "../animations/RotateBetweenWords";
 
-import Profile_Pic from "../../../public/images/profile-pic.png";
+import Profile_Pic from "/images/profile-pic.png";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const Profile: React.FC = () => {
