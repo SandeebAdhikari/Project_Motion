@@ -58,6 +58,7 @@ const Profile: React.FC = () => {
                 whileHover={{ scale: 1.1 }}
                 onAnimationComplete={() => setFirstBottonComplete(true)}
                 className="w-36 flex mr-5 items-center h-12 px-5 border  rounded-xl gap-2"
+                onClick={() => (window.location.href = "/SandeebResume.pdf")}
               >
                 <span className="ml-2 font-bold text-lg">
                   <GradualSpacing text="Resume" />
@@ -72,6 +73,9 @@ const Profile: React.FC = () => {
                   exit="exit"
                   whileHover={{ scale: 1.1 }}
                   className="w-32 bg-orange-200  flex items-center h-12 px-5 hover:border rounded-xl"
+                  onClick={() =>
+                    (window.location.href = "mailto:sandeebadhikari@gmail.com")
+                  }
                 >
                   <span className="ml-2 font-bold text-black text-lg">
                     <GradualSpacing text="Contact" />

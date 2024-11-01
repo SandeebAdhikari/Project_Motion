@@ -13,7 +13,14 @@ const NavBar = () => {
   const [typingComplete, setTypingComplete] = useState(false);
   const [lastNameComplete, setLastNameComplete] = useState(false);
   const [logoComplete, setLogoComplete] = useState(false);
-  const icons = [LinkedIn, GitHub, Instagram, YouTube, Twitter];
+
+  const icons = [
+    { src: LinkedIn, url: "https://linkedin.com" },
+    { src: GitHub, url: "https://github.com/SandeebAdhikari" },
+    { src: Instagram, url: "https://instagram.com" },
+    { src: YouTube, url: "https://youtube.com" },
+    { src: Twitter, url: "https://twitter.com" },
+  ];
 
   return (
     <AnimatePresence>
@@ -60,19 +67,21 @@ const NavBar = () => {
 
         <div className="flex items-center space-x-4">
           {logoComplete &&
-            icons.map((Icon, index) => (
+            icons.map((icon, index) => (
               <motion.div
                 key={`icon-${index}`}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.2 }}
               >
-                <img
-                  src={Icon}
-                  alt={`icon-${index}`}
-                  className="h-6 w-9 hover:border-red-600 hover:scale-110 transition-transform duration-200"
-                  style={{ filter: "invert(1)" }}
-                />
+                <a href={icon.url} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={icon.src}
+                    alt={`icon-${index}`}
+                    className="h-6 w-9 hover:border-red-600 hover:scale-110 transition-transform duration-200"
+                    style={{ filter: "invert(1)" }}
+                  />
+                </a>
               </motion.div>
             ))}
         </div>
