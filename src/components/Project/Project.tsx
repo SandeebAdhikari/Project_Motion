@@ -87,6 +87,7 @@ const Project = () => {
                   iconImage={project.icon}
                   url={project.url}
                   invertColor={project.invertColor}
+                  github={project.github}
                 />
               </div>
             ))}

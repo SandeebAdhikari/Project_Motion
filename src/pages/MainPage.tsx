@@ -3,6 +3,7 @@ import Profile from "../components/profile/Profile";
 import About from "../components/About/About";
 import Project from "../components/Project/Project";
 import Footer from "../components/Footer";
+import ContactMe from "../components/contact/ContactMe";
 
 const MainPage = () => {
   return (
@@ -10,8 +11,8 @@ const MainPage = () => {
       <NavBar />
       <Profile />
       <About />
-
       <Project />
+      <ContactMe />
       <Footer />
     </div>
   );
