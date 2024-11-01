@@ -3,7 +3,7 @@ import { useState } from "react";
 import TypingEffect from "./animations/TypingEffect";
 import logo from "/logo/logo512.png";
 import { slideAnimation } from "./animations/animations";
-import Facebook from "../assets/icons/socials/facebook.svg";
+import LinkedIn from "../assets/icons/socials/linkedin.svg";
 import GitHub from "../assets/icons/socials/github.svg";
 import Instagram from "../assets/icons/socials/instagram.svg";
 import YouTube from "../assets/icons/socials/youtube.svg";
@@ -13,7 +13,7 @@ const NavBar = () => {
   const [typingComplete, setTypingComplete] = useState(false);
   const [lastNameComplete, setLastNameComplete] = useState(false);
   const [logoComplete, setLogoComplete] = useState(false);
-  const icons = [Facebook, GitHub, Instagram, YouTube, Twitter];
+  const icons = [LinkedIn, GitHub, Instagram, YouTube, Twitter];
 
   return (
     <AnimatePresence>

@@ -8,7 +8,7 @@ const ContactMe = () => {
   const isMobileDebonced = useDebounceValue(isMobile, 600);
   const email = "sandeebadhikari@gmail.com";
   return (
-    <div className="mt-[100px] flex w-full justify-between items-center h-[900px]]">
+    <div className="my-[86px] flex w-full justify-between items-center h-[900px]]">
       <div className="flex p-2 ">
         <FadeRight duration={1} whileInView={!isMobileDebonced}>
           <h1 className="text-8xl  font-bold text-center mt-6">

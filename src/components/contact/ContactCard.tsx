@@ -1,7 +1,7 @@
 import Instagram from "../../assets/icons/socials/instagram.svg";
 import YouTube from "../../assets/icons/socials/youtube.svg";
 import Twitter from "../../assets/icons/socials/x.svg";
-import Facebook from "../../assets/icons/socials/facebook.svg";
+import LinkedIn from "../../assets/icons/socials/linkedin.svg";
 import { motion } from "framer-motion";
 
 interface ContactCardProps {
@@ -9,7 +9,7 @@ interface ContactCardProps {
 }
 
 const ContactCard = ({ email }: ContactCardProps) => {
-  const icons = [Facebook, Instagram, YouTube, Twitter];
+  const icons = [LinkedIn, Instagram, YouTube, Twitter];
   const FADE_DOWN = {
     hidden: { opacity: 0, y: -10 },
     show: { opacity: 1, y: 0, transition: { type: "spring" } },
