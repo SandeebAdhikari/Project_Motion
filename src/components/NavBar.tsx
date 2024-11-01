@@ -15,7 +15,10 @@ const NavBar = () => {
   const [logoComplete, setLogoComplete] = useState(false);
 
   const icons = [
-    { src: LinkedIn, url: "https://linkedin.com" },
+    {
+      src: LinkedIn,
+      url: "https://www.linkedin.com/in/sandeeb-adhikari-2129a0236/",
+    },
     { src: GitHub, url: "https://github.com/SandeebAdhikari" },
     { src: Instagram, url: "https://instagram.com" },
     { src: YouTube, url: "https://youtube.com" },

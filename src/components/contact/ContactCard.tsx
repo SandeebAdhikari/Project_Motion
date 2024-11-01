@@ -10,7 +10,10 @@ interface ContactCardProps {
 
 const ContactCard = ({ email }: ContactCardProps) => {
   const icons = [
-    { src: LinkedIn, url: "https://linkedin.com" },
+    {
+      src: LinkedIn,
+      url: "https://www.linkedin.com/in/sandeeb-adhikari-2129a0236/",
+    },
     { src: Instagram, url: "https://instagram.com" },
     { src: YouTube, url: "https://www.youtube.com/watch?v=jfKfPfyJRdk" },
     { src: Twitter, url: "https://twitter.com" },
