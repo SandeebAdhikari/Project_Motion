@@ -8,7 +8,7 @@ interface WavyTextProps {
 const WavyText: React.FC<WavyTextProps> = ({ word = "default text" }) => {
   // Reference the container div and set up in-view tracking
   const ref = useRef(null);
-  const isInView = useInView(ref, { triggerOnce: false, threshold: 0.2 });
+  const isInView = useInView(ref, { amount: 0.2 });
 
   const variants1 = {
     hidden: { y: 10 },

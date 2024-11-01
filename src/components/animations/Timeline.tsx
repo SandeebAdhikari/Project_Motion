@@ -1,10 +1,10 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { fadeAnimation, slideAnimation } from "./animations";
+import { slideAnimation } from "./animations";
 
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
-  visible: (i) => ({
+  visible: (i: number) => ({
     pathLength: 1,
     opacity: 1,
     transition: {
