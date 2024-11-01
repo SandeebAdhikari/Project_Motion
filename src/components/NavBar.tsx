@@ -44,7 +44,6 @@ const NavBar = () => {
           )}
         </div>
 
-        {/* Logo */}
         <div className="flex flex-grow justify-center ">
           {lastNameComplete && (
             <motion.div
