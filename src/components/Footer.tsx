@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fadeAnimation, slideAnimation } from "./animations/animations";
+import { slideAnimation } from "./animations/animations";
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
           whileInView="animate"
           exit="exit"
         >
-          SANDEEB <strong className="text-slate-600">ADHIKARI</strong>
+          SANDEEB <span className="text-slate-600">ADHIKARI</span>
         </motion.h1>
         <motion.h1
           variants={slideAnimation("right")}

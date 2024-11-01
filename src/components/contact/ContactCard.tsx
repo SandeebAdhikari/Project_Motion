@@ -56,18 +56,18 @@ const ContactCard = ({ email }: ContactCardProps) => {
           variants={FADE_DOWN}
           type="text"
           placeholder="NAME"
-          className="border-b p-2 w-full bg-black"
+          className="border-b p-2 w-full bg-black border-orange-200 hover:border-slate-600"
         />
         <motion.input
           variants={FADE_DOWN}
           type="email"
           placeholder="EMAIL"
-          className="border-b p-2 w-full bg-black"
+          className="border-b p-2 w-full bg-black border-orange-200 hover:border-slate-600"
         />
         <motion.textarea
           variants={FADE_DOWN}
           placeholder="MESSAGE"
-          className="border-b p-2 w-full  bg-black"
+          className="border-b p-2 w-full  bg-black border-orange-200 hover:border-slate-600"
         />
       </div>
       <motion.div variants={FADE_DOWN} className=" flex justify-end w-full">
