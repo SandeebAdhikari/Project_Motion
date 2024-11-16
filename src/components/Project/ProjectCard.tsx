@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <motion.img
           src={image}
           alt={name}
-          className="w-fit h-3/4 rounded-md border hover:border-slate-600 hover:border-spacing-2 hover:scale-105 transition duration-300 ease-in-out"
+          className="w-6/7 h-2/3 rounded-md border hover:border-slate-600 hover:border-spacing-2 hover:scale-105 transition duration-300 ease-in-out"
           variants={fadeAnimation}
           initial="initial"
           animate="animate"
