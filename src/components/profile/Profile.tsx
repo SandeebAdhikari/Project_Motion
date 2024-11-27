@@ -18,8 +18,8 @@ const Profile: React.FC = () => {
 
   return (
     <AnimatePresence>
-      <div className="mt-[200px] h-[620px] flex justify-between w-full">
-        <div className="flex flex-col mt-[40px] text-6xl">
+      <div className="mt-[200px] h-auto md:h-[620px] flex flex-col md:flex-row justify-between w-full px-5 md:px-0">
+        <div className="flex flex-col mt-10 md:mt-[40px] text-3xl md:text-6xl">
           <GradualSpacing
             text="Transforming Ideas Into"
             onComplete={() => setFirstGradualComplete(true)}
@@ -33,11 +33,14 @@ const Profile: React.FC = () => {
             </div>
           )}
           {secondGradualComplete && (
-            <div className="mt-5 flex items-center justify-center">
-              <motion.h1 variants={headTextAnimation} className="text-2xl">
+            <div className="mt-5 flex flex-col md:flex-row items-center justify-center">
+              <motion.h1
+                variants={headTextAnimation}
+                className="text-lg md:text-2xl"
+              >
                 Hi, I'm Sandeeb, I am{" "}
               </motion.h1>
-              <h1 className="mx-2 text-slate-600">
+              <h1 className="mx-2 text-slate-600 text-center md:text-left">
                 <RotateBetweenWords
                   words={[
                     "Full-Stack Developer",
@@ -49,7 +52,7 @@ const Profile: React.FC = () => {
             </div>
           )}
           {secondGradualComplete && (
-            <div className="mt-3 flex justify-center w-full">
+            <div className="mt-5 flex flex-col md:flex-row justify-center w-full gap-3">
               <motion.button
                 variants={slideAnimation("up")}
                 initial="initial"
@@ -57,7 +60,7 @@ const Profile: React.FC = () => {
                 exit="exit"
                 whileHover={{ scale: 1.1 }}
                 onAnimationComplete={() => setFirstBottonComplete(true)}
-                className="w-36 flex mr-5 items-center h-12 px-5 border  rounded-xl gap-2"
+                className="w-36 flex mx-auto md:mx-0 items-center h-12 px-5 border rounded-xl gap-2"
                 onClick={() => (window.location.href = "/SandeebResume.pdf")}
               >
                 <span className="ml-2 font-bold text-lg">
@@ -72,7 +75,7 @@ const Profile: React.FC = () => {
                   animate="animate"
                   exit="exit"
                   whileHover={{ scale: 1.1 }}
-                  className="w-32 bg-orange-200  flex items-center h-12 px-5 hover:border rounded-xl"
+                  className="w-32 bg-orange-200 flex mx-auto md:mx-0 items-center h-12 px-5 hover:border rounded-xl"
                   onClick={() =>
                     (window.location.href = "mailto:sandeebadhikari@gmail.com")
                   }
@@ -93,7 +96,7 @@ const Profile: React.FC = () => {
             exit="exit"
             src={Profile_Pic}
             alt="profile"
-            className="h-[400px] w-[350px] rounded-full hover:border border-spacing-0.5 border-orange-200"
+            className="h-[300px] w-[300px] md:h-[400px] md:w-[350px] rounded-full hover:border border-spacing-0.5 border-orange-200 mx-auto md:mx-0"
           />
         )}
       </div>
