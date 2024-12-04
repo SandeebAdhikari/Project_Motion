@@ -39,15 +39,7 @@ export const PROJECT_DATA = [
     invertColor: false,
     github: "https://github.com/SandeebAdhikari/E-Commerce",
   },
-  {
-    projectName: "Personal Expense Tracker",
-    create: "React Router-DOM",
-    icon: [ReactRouterDomIcon, TailwindCss, DaisyUI],
-    image: ExpenseManagementDashboard,
-    url: "https://personal-expense-tracker-rose.vercel.app/",
-    invertColor: true,
-    github: "https://github.com/SandeebAdhikari/Personal_Expense_Tracker",
-  },
+
   {
     projectName: "Post-Blog Django App",
     create: "Django",
@@ -58,15 +50,6 @@ export const PROJECT_DATA = [
     github: "https://github.com/SandeebAdhikari/Post_blog_Django_Project",
   },
 
-  {
-    projectName: "Weather App",
-    create: "React.js",
-    icon: [ReactjsSvg, DaisyUI, TailwindCss],
-    image: WeatherApp,
-    url: "https://weather-app-sage-theta-96.vercel.app/",
-    invertColor: false,
-    github: "https://github.com/SandeebAdhikari/Weather_App",
-  },
   {
     projectName: "Portfolio Website",
     create: "Framer Motion",
