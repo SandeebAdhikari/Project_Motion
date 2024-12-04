@@ -1,12 +1,13 @@
-import ExpenseManagementDashboard from "../assets/images/projects/Dashboard_PE.png";
 import EcommerceMainPage from "../assets/images/projects/MainPage_Ecommerce.png";
 import FlexiWallet from "../assets/images/projects/FlexiWallet.png";
 import Portfolio from "../assets/images/projects/PortFolio.png";
 import PostBlog from "../assets/images/projects/PostBlog.png";
-import WeatherApp from "../assets/images/projects/WeatherApp.png";
+
 import EntertainmentApp from "../assets/images/projects/Entertainment.png";
 import Markdown from "../assets/images/projects/Markdown.png";
 import TicTacToe from "../assets/images/projects/Tic-tac-toe.png";
+import Routine from "../assets/images/projects/daily_routine.png";
+import Designo from "../assets/images/projects/designo.png";
 
 import ReactjsSvg from "../assets/icons/reactjs.svg";
 import ReduxSvg from "../assets/icons/redux.svg";
@@ -38,16 +39,6 @@ export const PROJECT_DATA = [
     url: "e-commerce-mu-ten-81.vercel.app",
     invertColor: false,
     github: "https://github.com/SandeebAdhikari/E-Commerce",
-  },
-
-  {
-    projectName: "Post-Blog Django App",
-    create: "Django",
-    icon: [DjangoSvg],
-    image: PostBlog,
-    url: "https://post-blog-django-project.vercel.app/",
-    invertColor: false,
-    github: "https://github.com/SandeebAdhikari/Post_blog_Django_Project",
   },
 
   {
@@ -85,5 +76,32 @@ export const PROJECT_DATA = [
     url: "https://tic-tac-toe-six-navy.vercel.app/",
     invertColor: false,
     github: "https://github.com/SandeebAdhikari/Tic_Tac_Toe",
+  },
+  {
+    projectName: "Design App",
+    create: "React.js",
+    icon: [Nextdotjs, TypeScript, TailwindCss],
+    image: Designo,
+    url: "https://memento-design.vercel.app/",
+    invertColor: false,
+    github: "https://github.com/SandeebAdhikari/Memento_Design",
+  },
+  {
+    projectName: "Daily Routine App",
+    create: "React.js",
+    icon: [Nextdotjs, TypeScript, TailwindCss, ReactRouterDomIcon],
+    image: Routine,
+    url: "https://daily-routine-app-ten.vercel.app/signIn",
+    invertColor: false,
+    github: "https://github.com/SandeebAdhikari/Daily_Routine_App",
+  },
+  {
+    projectName: "Post-Blog Django App",
+    create: "Django",
+    icon: [DjangoSvg],
+    image: PostBlog,
+    url: "https://post-blog-django-project.vercel.app/",
+    invertColor: false,
+    github: "https://github.com/SandeebAdhikari/Post_blog_Django_Project",
   },
 ];
