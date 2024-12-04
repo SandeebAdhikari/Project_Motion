@@ -21,7 +21,7 @@ const About: React.FC = () => {
   const rightCardX = useTransform(scrollYProgress, [0, 0.1], ["100%", "-10%"]);
 
   const description =
-    "Hi, I'm Sandeeb, a computer science student with a passion for blending technology and creativity to build meaningful digital experiences.  I love creating everything from full-stack applications—like a banking management system and an e-commerce platform—to engaging visuals, from 3D animations in Blender to 2D designs in Procreate.AI excites me the most; I’m fascinated by its potential to empower people and drive innovation. My future goal is to start a company focused on discovering and nurturing talent worldwide, helping individuals realize their potential regardless of where they’re from. Driven by curiosity and creativity, I’m committed to building solutions that make a real impact. Let’s create something amazing together!";
+    "Hi, I'm Sandeeb, a Full Stack Developer with a passion for blending technology and creativity to build meaningful digital experiences. I love creating everything from full-stack applications—like a banking management system and an e-commerce platform—to engaging visuals, from 3D animations in Blender to 2D designs in Procreate.AI excites me the most; I’m fascinated by its potential to empower people and drive innovation. My future goal is to start a company focused on discovering and nurturing talent worldwide, helping individuals realize their potential regardless of where they’re from. Driven by curiosity and creativity, I’m committed to building solutions that make a real impact. Let’s create something amazing together!";
   return (
     <AnimatePresence>
       <div className="text-7xl w-full h-[660px]">
