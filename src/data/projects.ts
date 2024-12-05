@@ -40,16 +40,6 @@ export const PROJECT_DATA = [
     invertColor: false,
     github: "https://github.com/SandeebAdhikari/E-Commerce",
   },
-
-  {
-    projectName: "Portfolio Website",
-    create: "Framer Motion",
-    icon: [ReactjsSvg, TypeScript, FramerMotion, TailwindCss],
-    image: Portfolio,
-    url: "https://www.sandeebadhikari.com/",
-    invertColor: true,
-    github: "https://github.com/SandeebAdhikari/Project_Motion",
-  },
   {
     projectName: "Entertainment App",
     create: "Next.js",
