@@ -77,15 +77,6 @@ export const PROJECT_DATA = [
     github: "https://github.com/SandeebAdhikari/Memento_Design",
   },
   {
-    projectName: "Daily Routine App",
-    create: "React.js",
-    icon: [Nextdotjs, TypeScript, TailwindCss, ReactRouterDomIcon],
-    image: Routine,
-    url: "https://daily-routine-app-ten.vercel.app/signIn",
-    invertColor: false,
-    github: "https://github.com/SandeebAdhikari/Daily_Routine_App",
-  },
-  {
     projectName: "Post-Blog Django App",
     create: "Django",
     icon: [DjangoSvg],
