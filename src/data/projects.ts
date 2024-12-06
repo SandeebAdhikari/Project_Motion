@@ -1,20 +1,16 @@
 import EcommerceMainPage from "../assets/images/projects/MainPage_Ecommerce.png";
 import FlexiWallet from "../assets/images/projects/FlexiWallet.png";
-import Portfolio from "../assets/images/projects/PortFolio.png";
+
 import PostBlog from "../assets/images/projects/PostBlog.png";
 
 import EntertainmentApp from "../assets/images/projects/Entertainment.png";
 import Markdown from "../assets/images/projects/Markdown.png";
 import TicTacToe from "../assets/images/projects/Tic-tac-toe.png";
-import Routine from "../assets/images/projects/daily_routine.png";
 import Designo from "../assets/images/projects/designo.png";
-
 import ReactjsSvg from "../assets/icons/reactjs.svg";
 import ReduxSvg from "../assets/icons/redux.svg";
 import DjangoSvg from "../assets/icons/django.svg";
-import ReactRouterDomIcon from "../assets/icons/react-router-color.svg";
 import Nextdotjs from "../assets/icons/nextdotjs.svg";
-import FramerMotion from "../assets/icons/framer.svg";
 import TypeScript from "../assets/icons/typescript.svg";
 import TailwindCss from "../assets/icons/tailwindcss.svg";
 import DaisyUI from "../assets/icons/daisyui.svg";
